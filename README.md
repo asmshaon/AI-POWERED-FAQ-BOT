@@ -5,22 +5,21 @@ An intelligent FAQ chatbot powered by Groq's LLM and LangChain, designed to answ
 ## Features
 
 - Interactive command-line chatbot interface
-- Powered by Groq's LLM (llama-3.1-8b-instant)
+- Powered by Groq's LLM (llama-3.1-8b-instant and GPT-OSS-20B)
 - Built with LangChain for prompt management and chain creation
-- Environment variable management with python-dotenv
 - Secure API key handling with getpass prompt
 
 ## Prerequisites
 
 - Python 3.12+
-- Groq API Key (get one from [Groq](https://groq.com))
+- Groq API Key - Get one from [Groq Console](https://console.groq.com)
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:asmshaon/AI-POWERED-FAQ-BOT.git
 cd AI-Powered-FQA-Bot
 ```
 
@@ -80,21 +79,24 @@ AI-Powered-FQA-Bot/
 
 ## Technologies Used
 
-- **LangChain**: Framework for building LLM applications
-- **Groq**: Fast LLM inference API
-- **Python-dotenv**: Environment variable management
-- **FastAPI**: (For future API deployment)
-- **Sentence Transformers**: (For future semantic search)
-- **HuggingFace**: (For future model enhancements)
+- **LangChain** - Framework for building LLM applications
+- **Groq** - Fast LLM inference API
+- **Python-dotenv** - Environment variable management
 
 ## How It Works
 
-1. **Environment Setup**: Loads API keys from `.env` file or prompts user input
-2. **FAQ Data**: Stores predefined questions and answers about EVMs
+1. **Environment Setup**: Loads API keys from `.env` file or prompts user input with getpass
+2. **FAQ Data**: Stores predefined questions and answers about Electronic Voting Machines
 3. **LLM Chain**: Uses LangChain's PromptTemplate and ChatGroq for response generation
-4. **Interactive Loop**: Continuously accepts user questions and generates AI responses
+4. **Interactive Loop**: Continuously accepts user questions and generates AI-powered responses
 5. **Context-Aware**: Uses the FAQ dataset to provide accurate, contextual answers
+
+## Security Note
+
+Never commit your `.env` file containing API keys to version control. The `.gitignore` file is configured to prevent this.
 
 ## Contact
 
-[srabon.php@gmail.com]
+Abu Saleh Muhammad Shaon
+Email: srabon.php@gmail.com
+GitHub: [@asmshaon](https://github.com/asmshaon)
