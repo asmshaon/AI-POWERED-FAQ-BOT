@@ -5,6 +5,10 @@ __pycache__/
 
 .venv
 
+# Environment variables
+.env
+.env.local
+
 # IDE
 .idea/
 *.iml
