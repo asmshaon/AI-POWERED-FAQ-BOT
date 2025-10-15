@@ -1,0 +1,11 @@
+langchain
+langchain-community
+langchain-core
+fastapi
+uvicorn
+python-dotenv
+langchain_groq
+langchain-google-genai
+sentence-transformers
+langchain-huggingface
+ipywidgets
